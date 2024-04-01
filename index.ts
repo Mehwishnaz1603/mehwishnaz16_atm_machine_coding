@@ -4,13 +4,7 @@ import inquirer from "inquirer";
 let myBalance = 10000;
 let pinCode = 160397;
 async function ATM() {
- {console.log( "Welcome to Code with Mehwishnaz");}
-
-
-
-
- 
-  
+ {console.log( "Welcome to Code with Mehwishnaz");} 
 let myAns = await inquirer.prompt([
   {
     name: "userPin",
