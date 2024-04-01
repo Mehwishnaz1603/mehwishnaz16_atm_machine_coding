@@ -73,7 +73,7 @@ if (options.menu === "Withdraw") {
 
  else  {
     console.log("Your pin is invalid!")
- } 
+  } 
 
 };
 
