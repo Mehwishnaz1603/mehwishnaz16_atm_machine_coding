@@ -3,9 +3,6 @@ import inquirer from "inquirer";
 let myBalance = 10000;
 let pinCode = 160397;
 async function ATM() {
-    {
-        console.log("Welcome to Code with Mehwishnaz");
-    }
     let myAns = await inquirer.prompt([
         {
             name: "userPin",
@@ -28,7 +25,7 @@ async function ATM() {
             {
                 name: "amount",
                 type: "number",
-                message: "Please enter amount:",
+                message: "Please enter amount",
             },
         ]);
         if (amount.amount < myBalance) {
@@ -52,7 +49,7 @@ async function ATM() {
         console.log(`Your remaining balance is ${myBalance}`);
     }
     else if (options.menu === "Balance Inquiry") {
-        console.log(`Your available balance is: ${myBalance}`);
+        console.log(`Your available balance is ${myBalance}`);
     }
     else if (options.menu === "Other Transaction") {
         let trans = await inquirer.prompt([
