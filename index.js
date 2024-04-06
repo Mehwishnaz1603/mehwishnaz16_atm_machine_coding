@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import inquirer from "inquirer";
 let myBalance = 10000;
-const pinCode = 4545;
+const pinCode = 160397;
 async function ATM() {
     let myAns = await inquirer.prompt([
         {

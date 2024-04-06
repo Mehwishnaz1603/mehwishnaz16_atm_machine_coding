@@ -2,7 +2,7 @@
 import inquirer from "inquirer";
 
 let myBalance = 10000;
-const pinCode = 4545;
+const pinCode = 160397;
 
 async function ATM() {
   let myAns = await inquirer.prompt([
@@ -70,10 +70,10 @@ async function ATM() {
       if (trans.otherTrans === "Yes") {
         ATM();
       }
-    }
-  } else {
-    console.log("Incorrect pin entered. Please try again.");
-  }
-}
+      }
+      } else {
+      console.log("Incorrect pin entered. Please try again.");
+      }
+      }
 
-ATM();
+      ATM();
